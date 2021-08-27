@@ -6,13 +6,13 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		
-		
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	    <link rel='stylesheet' href="css/all.min.css">
 		<link rel="stylesheet" type="text/css" href="css/compsup.css">
 
-		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
 
@@ -28,14 +28,14 @@
 		<div id="topbar" class="d-none d-lg-flex align-items-center ">
 			<div class="container d-flex">
 			  <div class="contact-info mr-auto">
-				<i class="fas fa-envelope"></i> <a href="mailto:contact@example.com">contact@example.com</a>
+				<i class="fas fa-envelope"></i> <a href="mailto:pptech442@gmail.com">pptech442@gmail.com</a>
 				<i class="fas fa-phone-square-alt"></i><a href="tel:+1 407 564 0019">+1 407-564-0019</a>
 			  </div>
 			  <div class="social-links">
-				<a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-				<a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
-				<a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-				<a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></i></a>
+				<a href="https://twitter.com/tech_pp" class="twitter"><i class="fab fa-twitter"></i></a>
+				<a href="https://www.facebook.com/PPTech442" class="facebook"><i class="fab fa-facebook"></i></a>
+				<a href="https://www.instagram.com/pptechnologiesglobal" class="instagram"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.linkedin.com/company/pptech442"  class="linkedin"><i class="fab fa-linkedin-in"></i></i></a>
 			  </div>
 			</div>
 		  </div>
@@ -55,15 +55,17 @@
 						<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
 						<li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
 						<li class="nav-item"><a class="nav-link" href="softinstall.html">Software Installation</a></li>
-						<li class="nav-item dropdown">
-						  <a class="nav-link dropdown-toggle" href="#" id="h1-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										Solutions <i class="icon-arrow-down font-12 ml-1"></i>
-									  </a>
-						  <ul id ="drop" class="b-none border-0 dropdown-menu">
-							<li><a class="dropdown-item" href="compsupport.html">Computer System Support</a></li>
-							<li><a class="dropdown-item" href="Printer Solutions.html">Printer Solutions</a></li>
-							<li><a class="dropdown-item" href="#">Email/Social Media Solutions</a></li>
-						   <li class="divider" role="separator"></li>
+						
+						
+						<div class="dropdown">
+							<ul onclick="myFunction()" class="dropbtn">Solutions</ul>
+							<div id="myDropdown" class="dropdown-content ">
+							  <a href="compsupport.html">Computer Support</a>
+							  <a href="Printer_Solutions.html">Printer Solutions</a>
+							  <a href="Email & Social Media Solutions.html">Email/Social Media Support</a>
+							</div>
+						  </div>
+						</div>
 							<!-- <li class="dropdown-submenu position-relative"> <a class="dropdown-toggle dropdown-item" data-toggle="dropdown" href="#">Dropdown <i class="icon-arrow-right float-right font-12 mt-1"></i></a>
 							  <ul class="dropdown-menu b-none border-0 menu-right">
 								<li><a class="dropdown-item" href="#">Action</a></li>
@@ -283,12 +285,14 @@
     <div class=" col-sm-4 col-md col-sm-4  col-12 col">
     <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
     <!--headin5_amrc-->
+
     <p class="mb10">PPTECH World<br>
         We provide Global and Integrated Solutions.
         Computer Support that's there before you need it.</p>
+
     <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
-    <p><i class="fa fa-phone"></i>  +1 407-564-0019  </p>
-    <p><i class="fa fa fa-envelope"></i> info@example.com  </p>
+    <p><i class="fa fa-phone"></i>  +1 407-564-0019 </p>
+    <p><i class="fa fa fa-envelope"></i> pptech442@gmail.com </p>
     
     
     </div>
@@ -313,8 +317,8 @@
     <ul class="footer_ul_amrc">
     <li><a href="compsupport.html">Computer system support</a></li>
     <li><a href="Printer Solutions.html">Printer Solutions</a></li>
-    <li><a href="#">Email/Social media Solutions</a></li>
-    <li><a href="#">Virtual Technical Assistance</a></li>
+    <li><a href="Email & Social Media Solutions.html">Email/Social media Solutions</a></li>
+ 
     <li><a href="softinstall.html">Software Installation</a></li>
     
     </ul>
@@ -326,11 +330,11 @@
     <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
     <!--headin5_amrc ends here-->
     
-    <ul class="footer_ul2_amrc">
-    <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Twitter<a href="#">https://www.lipsum.com/</a></p></li>
-    <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Facebook<a href="#">https://www.lipsum.com/</a></p></li>
-    <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>LinkedIn<a href="#">https://www.lipsum.com/</a></p></li>
-    </ul>
+	<ul class="footer_ul2_amrc">
+		<li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p><a href="https://twitter.com/tech_pp">Twitter</a></p></li>
+		<li><a href="#"><i class="fab fa-facebook fleft padding-right"></i> </a><p><a href="https://www.facebook.com/PPTech442">Facebook</a></p></li>
+		<li><a href="#"><i class="fab fa-linkedin fleft padding-right"></i> </a><p><a href="https://www.linkedin.com/company/pptech442">Linkedin</a></p></li>
+		</ul>
     <!--footer_ul2_amrc ends here-->
     </div>
     </div>
@@ -347,12 +351,13 @@
     <!--foote_bottom_ul_amrc ends here-->
     <p class="text-center">Copyright @2021 | Designed With by <a href="#">PPTECH GROUP</a></p>
     
+     
     <ul class="social_footer_ul">
-    <li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
-    <li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
-    <li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
-    <li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
-    </ul>
+		<li><a href="https://www.facebook.com/PPTech442"><i class="fab fa-facebook-f"></i></a></li>
+		<li><a href="https://twitter.com/tech_pp "><i class="fab fa-twitter"></i></a></li>
+		<li><a href="https://www.linkedin.com/company/pptech442"><i class="fab fa-linkedin"></i></a></li>
+		<li><a href="https://www.instagram.com/pptechnologiesglobal"><i class="fab fa-instagram"></i></a></li>
+		</ul>
     <!--social_footer_ul ends here-->
     </div>
     
@@ -363,35 +368,33 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-			<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+		<script>/* When the user clicks on the button,
+			toggle between hiding and showing the dropdown content */
+			function myFunction() {
+			  document.getElementById("myDropdown").classList.toggle("show");
+			}
+			
+			// Close the dropdown menu if the user clicks outside of it
+			window.onclick = function(event) {
+			  if (!event.target.matches('.dropbtn')) {
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+				  var openDropdown = dropdowns[i];
+				  if (openDropdown.classList.contains('show')) {
+					openDropdown.classList.remove('show');
+				  }
+				}
+			  }
+			}</script>
+				
+		
+
+			
+
+			
 
 
-			<script>
-				$(document).ready(function () {
-					$('.dropdown-toggle').dropdown();
-				});
-			</script>
-
-
-
-<script src="js/navbar.js"></script>
-<script>
-    jQuery(document).on('click', '.navbar-nav > .dropdown', function(e) {
-        e.stopPropagation();
-      });
-      $(".dropdown-submenu").click(function() {
-        $(".dropdown-submenu > .dropdown-menu").toggleClass("show");
-      });
-</script>
 
 	</body>
 </html>
